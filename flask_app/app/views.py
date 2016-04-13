@@ -24,12 +24,6 @@ def home():
 def about():
     """Render the website's about page."""
     return render_template('about.html')
-    
-@app.route('/profile')
-def profile():
-    return render_template('profile.html')
-def timeinfo():
-    return time.strftime("%c")
 
 
 ###
@@ -61,4 +55,4 @@ def page_not_found(error):
 
 
 if __name__ == '__main__':
-    app.run(debug=True,host="0.0.0.0",port=8888)
+    app.run(debug=True,host="0.0.0.0",port="8888")
